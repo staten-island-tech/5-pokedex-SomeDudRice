@@ -8,11 +8,11 @@ data = json.load(pokedex)
 # for index, data in enumerate(data):
 #  print(index ,":", data["name"][language])
 
-typeask = input ("type?")
-for index, data in enumerate(data):
- if data["type"] == data[typeask]:
-  print(index ,":", data["name"]["english"])
-
+# typeask = input ("type?")
+# for index, data in enumerate(data):
+#  if data["type"] == typeask:
+#   print(index ,":", data["name"]["english"])
+print (data[0]["type"])
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
 # Add a language choice feature and print the pokemons name based on the user input
