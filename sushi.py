@@ -10,7 +10,27 @@ sushi_orders = [
     {"name": "Salmon Nigiri", "price": 6},
     {"name": "California Roll", "price": 8}
 ]
-sushi = []
-for order in sushi_orders:
-    sushi.append(sushi_orders["name"])
-print (sushi)
+def recipt (order):
+ the_recipt = {}
+ for sushi in order:
+  if sushi['name'] in the_recipt:
+   the_recipt[sushi['name']]['qyt']=+1
+  else:
+   the_recipt[sushi['name']] = {
+    'price': sushi['price'],
+    'qty':1
+   }
+
+ for sushi, value in the_recipt():
+   price = value['price']*value['qty']
+   print (sushi, value['qty'],price)
+recipt(sushi_orders)
+
+
+
+
+
+
+
+
+order(sushi_orders)
