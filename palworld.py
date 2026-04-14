@@ -8,10 +8,16 @@ data = json.load(pokedex)
 # for index, data in enumerate(data):
 #  print(index ,":", data["name"][language])
 
-typeask = input ("type?")
-for pocketmonster in enumerate(data):
-     if "fire" in pocketmonster["type"]:
-         print(data["name"]["english"])
+ # typeask = input ("type?")
+for pocketmonster in data:
+     if "grass" in data["name"]:
+         print(data["name"])
+         print ("1")
+
+# typeask = input ("type?")
+
+# for pokemon in (data):
+
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
