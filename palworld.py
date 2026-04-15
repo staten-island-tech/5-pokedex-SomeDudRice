@@ -3,20 +3,6 @@ import json
 pokedex = open("./pokedex.json", encoding="utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
-# language = input("english, japanese, or chinese")
-
-# for index, data in enumerate(data):
-#  print(index ,":", data["name"][language])
-
- # typeask = input ("type?")
-for pocketmonster in data:
-     if "grass" in data["name"]:
-         print(data["name"])
-         print ("1")
-
-# typeask = input ("type?")
-
-# for pokemon in (data):
 
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
@@ -29,3 +15,27 @@ for pocketmonster in data:
 
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
+# LANGAUGE SELECTION
+# language = input("english, japanese, or chinese")
+# for index, pokemon in enumerate(data):
+#  print(index ,":", pokemon["name"][language])
+
+# TYPE SELECTION
+# yeah =0
+# typechose= input("type?")
+# capit= typechose.capitalize()
+# for index, pocketmonster in enumerate(data):
+#      if capit in pocketmonster["type"]:
+#          yeah +=1
+#          print (index + 1, ":", pocketmonster["name"]["english"], pocketmonster["type"])
+# if yeah == 0:
+#     print ("that type doesnt exist, please retype it")
+
+# search= input()
+# capit= search.capitalize()
+# for index, pocketmonster in enumerate(data):
+#      if capit in pocketmonster["name"]:
+word=["Leon"]
+if "Le" in word:
+    print (1)
+          
