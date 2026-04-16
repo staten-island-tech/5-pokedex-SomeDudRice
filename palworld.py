@@ -32,10 +32,18 @@ data = json.load(pokedex)
 #     print ("that type doesnt exist, please retype it")
 
 # search= input()
-# capit= search.capitalize()
-# for index, pocketmonster in enumerate(data):
-#      if capit in pocketmonster["name"]:
-word=["Leon"]
-if "Le" in word:
-    print (1)
+# letters = list(search)
+# for poke in data:
+#     for letter in letters:
+#       if letter == list(poke["name"]):
+
+box = ["charmander"]
+searc = ["c","h", "a", "r"]
+if searc in list(box):
+    print(1)
+else:
+    print (2)
+
+
+
           
