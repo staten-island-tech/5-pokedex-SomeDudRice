@@ -32,18 +32,20 @@ data = json.load(pokedex)
 #     print ("that type doesnt exist, please retype it")
 
 # search= input()
+# state = 0
 # letters = list(search)
 # for poke in data:
-#     for letter in letters:
-#       if letter == list(poke["name"]):
+#     curmon = list(poke["name"])
+#     if letters[state] == curmon[state]:
+#         state +=1
+input= input()
+search = input.capitalize()
+pokelist = []
+for poke in data:
+  if search in poke["name"]["english"]:
+    pokelist.append(poke["name"]["english"])
+print (pokelist)
+         
+      
 
-box = ["charmander"]
-searc = ["c","h", "a", "r"]
-if searc in list(box):
-    print(1)
-else:
-    print (2)
-
-
-
-          
+         
